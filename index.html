@@ -20,28 +20,22 @@
         <h1 class="mavi">MAVİ AYDINLATMA</h1>
     </div>
     <div class="col-9 menu">
+
         <ul class="d-flex flex-row justify-conten-center align-items-center">
-            <li>
-                <a id="anasayfabtn" href="#">ANASAYFA</a>
-            </li>
-            <li>
-                <a id="urunlerbtn" href="#urunler">ÜRÜNLER</a>
-            </li>
-            <li>
-                <a href="#">ÇÖZÜMLER</a>
-            </li>
-            <li>
-                <a href="#">TASARIM ARAÇLARI</a>
-            </li>
-            <li>
-                <a href="#">İLETİŞİM</a>
-            </li>
+
+            <li id="anasayfabtn">ANASAYFA</li>
+            <li id="urunlerbtn">ÜRÜNLER</li>
+            <li id="cozumlerbtn">ÇÖZÜMLER</li>
+            <li id="tasarimaraclari">TASARIM ARAÇLARI</li>
+            <li id="iletisim">İLETİŞİM</li>
+       
+            
         </ul>
     </div>
 </div>
 
 
-<div class="row slider">
+<div id="slider" class="row slider">
     <div class="col p-0">
 
         <div id="carouselExampleCaptions" class="carousel slide">
@@ -106,13 +100,120 @@
     <a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
 </div>
 
-<div id="urunler">
+<div class="row">
+
+                <div id="urunler" class="col d-flex flex-column justify-content-center align-items-center">
+                <h1>ÜRÜNLER ALANI</h1>
+                <div id="urunfotograflari" class="d-flex justify-content-center align-items-center">
+                <img src="images/slide1.jpg">
+                <img src="images/slide2.jpg">
+                <img src="images/slide3.jpg">
+                <img src="images/slide4.jpg">
+                <img src="images/slide1.jpg">
+                <img src="images/slide2.jpg">
+                <img src="images/slide3.jpg">
+                <img src="images/slide4.jpg">
+                <img src="images/slide1.jpg">
+                <img src="images/slide2.jpg">
+                <img src="images/slide3.jpg">
+                <img src="images/slide4.jpg">
+                <img src="images/slide1.jpg">
+                <img src="images/slide2.jpg">
+                <img src="images/slide3.jpg">
+                <img src="images/slide4.jpg">
+                <img src="images/slide1.jpg">
+                <img src="images/slide2.jpg">
+                <img src="images/slide3.jpg">
+                <img src="images/slide4.jpg">
+                <img src="images/slide1.jpg">
+                <img src="images/slide2.jpg">
+                <img src="images/slide3.jpg">
+                <img src="images/slide4.jpg">
+                <img src="images/slide1.jpg">
+                <img src="images/slide2.jpg">
+                <img src="images/slide3.jpg">
+                <img src="images/slide4.jpg">
+                <img src="images/slide1.jpg">
+                <img src="images/slide2.jpg">
+                <img src="images/slide3.jpg">
+                <img src="images/slide4.jpg">
+
+                </div>
+                </div>
 
 </div>
+
+<div class="row">
+
+    <div id="cozumler" class="col d-flex justify-content-center align-items-center">
+    <h1>Çözümler Alanı</h1>
+    </div>
+
+</div>
+
+        
+
+<img class="uparrow" src="images/uparrow.png">
 
 </div>
 
 </body>
 
+<script>
 
+
+    $(document).ready(function() {
+         
+        $(window).scroll(function() {
+        if ($(this).scrollTop() > 100 ) {
+            $(".uparrow").show();
+          
+        }
+
+        else  {
+            $(".uparrow").hide();
+            
+        }
+
+    })
+
+        $(".uparrow").click(function() {
+            $("html, body").animate({scrollTop:0},700);
+         
+        })
+
+        $("#anasayfabtn").click(function() {
+
+            $('html, body').animate({
+                scrollTop: $("#slider").offset().top
+            },1000);
+           
+        });
+    
+        $("#urunlerbtn").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#urunler").offset().top
+            },1000);
+            $(".menudiv").fadeOut(1000);
+        });
+
+        $("#cozumlerbtn").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#cozumler").offset().top
+            },2000);
+            $(".menudiv").fadeOut(1000);
+        });
+
+        $(".uparrow").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#slider").offset().top
+            },1000);
+            $(".menudiv").fadeIn(1000);
+        });
+    
+    })
+
+
+    
+    </script>
 </html>
