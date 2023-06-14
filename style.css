@@ -1,0 +1,159 @@
+body {
+    text-align:center;
+    padding:0px;
+    margin:0px auto;
+    position: relative;
+}
+
+.socialdiv {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:100;
+}
+
+a.facebook {
+    text-decoration: none;
+    background-color: #3b5998;
+}
+
+a.twitter {
+    text-decoration: none;
+    background-color:#00acee;
+}
+
+a.instagram {
+    text-decoration: none;
+    background-color: #9735B1;
+    color: white;
+}
+
+
+i.fa {
+    height:40px;
+    width:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1rem;
+   
+
+}
+
+a.facebook:hover {
+    background-color:lightcyan;
+}
+
+a.twitter:hover {
+    background-color:lightcyan;
+}
+
+a.instagram:hover {
+    background-color:lightcyan;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.menudiv {
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:2;
+    width:100%;
+}
+
+.logo {
+    margin:auto;
+    height:80px;
+  
+}
+
+h1.mavi {
+    margin: auto;
+    font-size:1rem;
+    color: white;
+    letter-spacing:3px;
+}
+
+.menu {
+    margin:auto;
+    height:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu > ul {
+    margin: auto;
+    gap:10px;
+    padding:0px;
+  
+
+}
+
+.menu > ul > li {
+    display: inline-block;
+}
+
+.menu > ul > li > a {
+    display: block;
+    padding:5px 10px;
+    background-color:none;
+    color:white;
+    font-size:1rem;
+    text-decoration: none;
+    letter-spacing:2px;
+}
+
+.menu > ul > li > a:hover {
+    display:block;
+    background-color:darkred;
+    color: white;
+    transition:300ms ease-in-out;
+    border-radius:4px;
+}
+
+.carousel {
+
+    height:100vh;
+    width:100vw;
+    margin:auto 0px;
+
+
+}
+
+img.slideimg {
+    height:100vh;
+    width:100%;
+}
+
+.carousel-caption {
+    height:350px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ 
+}
+
+.carousel-indicators {
+    margin: auto;
+    margin-top:0px;
+  
+}
+
+
+h5.aydinlatma {
+    font-size:4rem;
+    letter-spacing:2px;
+}
